@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import FirstRequest from './component/firstRequest/FirstRequest';
+import PostRequest from './component/postRequest/PostRequest';
+import RandomJoke from './component/randomJoke/RandomJoke';
+import Title from './component/title/Title';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title />
+      <FirstRequest />
+      <RandomJoke />
+      <PostRequest />
     </div>
   );
 }
